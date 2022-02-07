@@ -1,0 +1,141 @@
+:root {
+    /* COLORS */
+
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+
+    /* TEXT */
+
+    /* paragraph */
+    --white: hsla(0, 0%, 100%, 0.75);
+    /* background, heading, button */
+    --light-gray: hsl(0, 0%, 95%);
+    
+    --ff: 'Lexend Deca', sans-serif;
+    --fs1: 15px;
+    --fs2: 30px;
+    --fw1: 400;
+    --fw2: 600;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: var(--ff);
+    font-size: var(--fs1);
+    font-weight: var(--fw1);
+    color: var(--white);
+}
+
+h1 {
+    color: var(--light-gray);
+    font-size: var(--fs2);
+    font-weight: var(--fw2);
+    margin-top: 3.125rem;
+    margin-left: 3.125rem;
+    transform: scaleY(1.5);
+    letter-spacing: -3px;
+}
+
+p {
+    margin-top: 2.5rem;
+    margin-left: 3.125rem;
+    line-height: 1.7;
+    width: 13.125rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 925px;
+}
+
+.column {
+    width: 18.75rem;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.column img {
+    width: 4.375rem;
+    height: 2.5rem;
+    justify-content: flex-start;
+    margin-top: 3.125rem;
+    margin-left: 3.125rem;
+}
+
+.column1 {
+    background-color: var(--orange); 
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.column2 {
+    background-color: var(--cyan);
+}
+
+.column3 {
+    background-color: var(--dark-cyan);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+a {
+    display: flex;
+    margin-top: 2.5rem;
+    margin-left: 3.125rem;
+    text-decoration: none;
+    height: 3.125rem;
+    width: 9.375rem;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.btn1 {
+    color: var(--orange);
+    transition: all 0.2s;
+}
+
+.btn1:hover {
+    background-color: var(--orange);
+    border-style: solid;
+    border-color: var(--white);
+    border-width: 0.1875rem;
+    color: var(--white);
+}
+
+.btn2 {
+    color: var(--cyan);
+    transition: all 0.2s;
+}
+
+.btn2:hover {
+    background-color: var(--cyan);
+    border-style: solid;
+    border-color: var(--white);
+    border-width: 0.1875rem;
+    color: var(--white);
+}
+
+.btn3 {
+    color: var(--dark-cyan);
+    transition: all 0.2s;
+}
+
+.btn3:hover {
+    background-color: var(--dark-cyan);
+    border-style: solid;
+    border-color: var(--white);
+    border-width: 0.1875rem;
+    color: var(--white);
+}
